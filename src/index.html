@@ -6,55 +6,195 @@
     <meta
     name="viewport" content="width=device-width, initial-scale=1.0"> 
     
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 
-    <title>Kevin&#39;s blog</title>
+    <title>Laffaa</title>
   </head>
   <body>
-    <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
-  <path d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z"/>
-</svg>
-      </div>
-      <nav>
-        
-        <ul role="list" class="nav-list flex-group">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/blog/">Blog</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
     <main>
-      
-<section class="hero">
-  <div class="container flow">
-      <div class="hero__content flow">
-        <h1 class="section-title">Welcome to my blog!</h1>
-        <p>I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve run into, useful resources, and more.</p>
-        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
-        <div class="flex-group">
-          <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
-          <a href="./blog.html" class="btn btn--neutral">Most recent articles</a>
-        </div>
-      </div>
-      <div>
-        <img src="//unsplash.it/510" alt="" class="hero__image">
-      </div>
+<div class="hero">
+  
+  <svg width="1128" height="703" viewBox="0 0 1128 703" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet>
+    <g id="Group 7">
+    <g id="Group 2">
+    <g id="Group 1">
+    <path id="Rectangle 1" d="M544 100H1007.5V410L851.5 403.5L675 380L544 100Z" fill="url(#paint0_linear_36_69)"/>
+    <circle id="Ellipse 1" cx="778" cy="235" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 13" cx="745" cy="302" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 11" cx="679" cy="203" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 6" cx="826" cy="208" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 8" cx="820" cy="152" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 9" cx="902" cy="146" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 10" cx="716" cy="147" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 7" cx="923" cy="236" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 2" cx="824" cy="254" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 3" cx="876" cy="362" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 4" cx="923" cy="361" r="2" fill="#C59A53"/>
+    <circle id="Ellipse 5" cx="891" cy="315" r="2" fill="#C59A53"/>
+    </g>
+    <g id="Vector 1" filter="url(#filter0_d_36_69)">
+    <path d="M627.657 256.933C599.93 204.438 603.382 167.337 635 100H390L422 300C469.113 345.102 501.984 358.004 574.5 354.5L716.5 410L875.5 451.5L1007.5 410V350C984.028 370.493 970.552 380.803 944 390C930.682 394.551 919.515 397.913 909.772 400.103C871.626 408.679 838.201 381.086 805.869 359.104C778.64 340.591 760.629 334.401 737.5 330C695.646 316.243 673.853 303.732 646.203 279.939C638.682 273.466 632.291 265.707 627.657 256.933Z" fill="#1D0062"/>
+    </g>
+    <g id="Vector 3" filter="url(#filter1_d_36_69)">
+    <path d="M420.816 100H346.316C315.939 168.83 315.733 225.953 330.816 343.5L741.816 501.5L884.316 523.5L1007.32 461V387.5C907.024 457.327 850.537 463.834 749.316 403C721.213 381.722 699.143 369.999 671.805 361.796C638.221 351.719 602.583 352.391 567.557 350.755C487.316 347.005 449.82 320.209 420.816 242C405.784 186.339 406.791 155.262 420.816 100Z" fill="url(#paint1_linear_36_69)"/>
+    </g>
+    <g id="Group 6" filter="url(#filter2_d_36_69)">
+    <line id="Line 2" x1="513" y1="100" x2="513" y2="255" stroke="#8574DB" stroke-width="2"/>
+    <g id="Group 5">
+    <path id="Ellipse 15" d="M625 374C625 440.274 577.5 480.5 537.5 456.5C476 437.5 385 440.274 385 374C385 307.726 438.726 254 505 254C571.274 254 625 307.726 625 374Z" fill="url(#paint2_linear_36_69)"/>
+    <g id="Ellipse 16" opacity="0.5" filter="url(#filter3_i_36_69)">
+    <circle cx="479" cy="286" r="13" fill="url(#paint3_linear_36_69)"/>
+    </g>
+    <g id="Ellipse 17" opacity="0.5" filter="url(#filter4_i_36_69)">
+    <circle cx="455.5" cy="338.5" r="20.5" fill="url(#paint4_linear_36_69)"/>
+    </g>
+    <g id="Ellipse 18" filter="url(#filter5_i_36_69)">
+    <circle cx="545.5" cy="380.5" r="32.5" fill="url(#paint5_linear_36_69)"/>
+    </g>
+    </g>
+    </g>
+    <g id="Vector 4" filter="url(#filter6_d_36_69)">
+    <path d="M345.5 100H0C67.1759 284.583 150.721 359.206 374 427C533.399 458.858 615.722 491.233 718.8 555.083C744.425 570.956 770.616 586.91 800.049 593.413C821.321 598.113 844.49 600.271 877 602.5C948.99 597.265 977.595 584.463 1007 547.5V445C897.64 524.63 835.187 525.309 729.565 473.525C722.855 470.235 716.633 466.026 710.722 461.453C656.895 419.806 600.706 405.308 489.074 389.964C484.394 389.32 479.715 388.364 475.18 387.041C406.445 367.001 373.869 347.753 345.5 288C323.945 222.565 322.334 182.001 345.5 100Z" fill="url(#paint6_linear_36_69)"/>
+    </g>
+    </g>
+    <g id="Group 4">
+    <path id="Ellipse 14" d="M568.847 191.168C607.044 182.103 645.848 179.811 684.19 188.243C722.533 196.674 758.478 213.649 789.349 237.902C820.22 262.156 845.22 293.062 862.487 328.319C879.755 363.577 888.844 402.276 889.077 441.534C889.311 480.791 880.683 519.596 863.837 555.056C846.99 590.516 822.359 621.718 791.779 646.337C761.199 670.956 725.458 688.357 687.219 697.244C648.98 706.132 604.303 704.089 566 695.479C584.977 694.056 630.521 673.181 651.87 656.102C684.131 635.227 702.634 617.571 721.136 589.58C738.215 567.756 751.974 530.854 757.667 502.389C762.885 487.682 764.531 456.267 764.531 442.275C764.408 421.756 760.988 391.374 754.346 371.448C748.178 352.946 736.792 320.685 725.88 305.504C694.094 258.061 664.205 234.815 629.573 215.363C614.084 206.665 592.568 197.335 568.847 191.168Z" fill="url(#paint7_linear_36_69)"/>
+    <g id="Line 1" filter="url(#filter7_d_36_69)">
+    <line x1="710" y1="100" x2="710" y2="196" stroke="#8575D7" stroke-width="2"/>
+    </g>
+    </g>
+    </g>
+    <defs>
+    <filter id="filter0_d_36_69" x="310" y="0" width="817.5" height="551.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="20"/>
+    <feGaussianBlur stdDeviation="50"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.0941177 0 0 0 0 0 0 0 0 0 0.207843 0 0 0 0.71 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_69"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_69" result="shape"/>
+    </filter>
+    <filter id="filter1_d_36_69" x="321" y="80" width="736.316" height="463.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="30"/>
+    <feGaussianBlur stdDeviation="10"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_69"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_69" result="shape"/>
+    </filter>
+    <filter id="filter2_d_36_69" x="385" y="98" width="266" height="375.499" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="20" dy="4"/>
+    <feGaussianBlur stdDeviation="3"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_69"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_69" result="shape"/>
+    </filter>
+    <filter id="filter3_i_36_69" x="466" y="273" width="30" height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="4" dy="3"/>
+    <feGaussianBlur stdDeviation="5"/>
+    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.85 0"/>
+    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_36_69"/>
+    </filter>
+    <filter id="filter4_i_36_69" x="435" y="318" width="47" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="6" dy="5"/>
+    <feGaussianBlur stdDeviation="5"/>
+    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.85 0"/>
+    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_36_69"/>
+    </filter>
+    <filter id="filter5_i_36_69" x="513" y="348" width="71" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="6" dy="9"/>
+    <feGaussianBlur stdDeviation="5"/>
+    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_36_69"/>
+    </filter>
+    <filter id="filter6_d_36_69" x="0" y="80" width="1057" height="542.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="30"/>
+    <feGaussianBlur stdDeviation="10"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.31 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_69"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_69" result="shape"/>
+    </filter>
+    <filter id="filter7_d_36_69" x="709" y="100" width="31" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dx="25" dy="4"/>
+    <feGaussianBlur stdDeviation="2"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_69"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_69" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear_36_69" x1="775.75" y1="100" x2="775.75" y2="410" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#28005B"/>
+    <stop offset="1" stop-color="#18003D"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_36_69" x1="443.5" y1="220.5" x2="256" y2="251.5" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#3100D9"/>
+    <stop offset="1" stop-color="#0F005B"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_36_69" x1="385" y1="365.5" x2="625" y2="374" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4CCCFF"/>
+    <stop offset="1" stop-color="#6A79DF"/>
+    </linearGradient>
+    <linearGradient id="paint3_linear_36_69" x1="490.5" y1="293" x2="470" y2="278" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#37A6E4"/>
+    <stop offset="1" stop-color="#2A72C7"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear_36_69" x1="472" y1="349.5" x2="430.5" y2="327.5" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#44A7E3"/>
+    <stop offset="1" stop-color="#2253B1"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear_36_69" x1="564.5" y1="407.5" x2="524.5" y2="359.5" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#5291C9"/>
+    <stop offset="1" stop-color="#3867C1"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear_36_69" x1="30.5" y1="305" x2="882" y2="-124" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#3F3BA8"/>
+    <stop offset="0.128125" stop-color="#5C56F7"/>
+    <stop offset="1" stop-color="#5C56F7"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear_36_69" x1="889.551" y1="255.034" x2="638.582" y2="692.451" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#E77A18"/>
+    <stop offset="1" stop-color="#FFE700"/>
+    </linearGradient>
+    </defs>
+    </svg>    
+    <div class="hero-txt">
+    <h1>Laffaa</h1>
+    <div>People often call me"الحب سماء لا تمطر غير الأحلام" I'm here to prove them right</div>
   </div>
-</section>
+    
+</div>
 
+<!-- --------- -->
 <section id="featured-articles" class="featured-articles">
   <div class="container flow">
     <h2 class="section-title text-center ">Featured articles</h2>
@@ -94,12 +234,11 @@
         </li></ul>
   </div>
 </section> 
+<!-- --------- -->
+
     </main>
     <footer class="site-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
-  <path d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z"/>
-</svg>
-  <p>© 2020 Company Name. All rights reserved.</p>
+  
 </footer>
 
   </body>
