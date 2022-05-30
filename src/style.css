@@ -1,37 +1,37 @@
 :root {
-  --fs-300: 0.9375rem;
-  --fs-400: 1.0625rem;
-  --fs-500: 1.375rem;
-  --fs-600: 1.875rem;
-  --fs-700: 2rem;
+	--fs-300: 0.9375rem;
+	--fs-400: 1.0625rem;
+	--fs-500: 1.375rem;
+	--fs-600: 1.875rem;
+	--fs-700: 2rem;
 
-  --ff-body: "Poppins", 'Baloo Bhaijaan 2',  sans-serif;
-  --ff-heading: "Poppins", 'Baloo Bhaijaan 2', "Playfair Display", serif;
+	--ff-body: "Poppins", "Baloo Bhaijaan 2", sans-serif;
+	--ff-heading: "Poppins", "Baloo Bhaijaan 2", "Playfair Display", serif;
 
-  --fw-400: 400;
-  --fw-700: 700;
-  --fw-900: 900;
+	--fw-400: 400;
+	--fw-700: 700;
+	--fw-900: 900;
 
-  --clr-primary-200: hsla(169, 70%, 95%, 1);
-  --clr-primary-300: hsla(169, 100%, 39%, 1);
-  --clr-primary-400: hsla(169, 100%, 26%, 1);
-  --clr-primary-500: hsla(169, 100%, 16%, 1);
+	--clr-primary-200: hsla(169, 70%, 95%, 1);
+	--clr-primary-300: hsla(169, 100%, 39%, 1);
+	--clr-primary-400: hsla(169, 100%, 26%, 1);
+	--clr-primary-500: hsla(169, 100%, 16%, 1);
 
-  --clr-neutral-100: hsla(0, 0%, 100%, 1);
-  --clr-neutral-300: hsla(0, 0%, 50%, 1);
-  --clr-neutral-400: hsla(0, 0%, 40%, 1);
-  --clr-neutral-500: hsla(0, 0%, 60%, 1);
-  --clr-neutral-900: hsla(0, 0%, 10%, 1);
+	--clr-neutral-100: hsla(0, 0%, 100%, 1);
+	--clr-neutral-300: hsla(0, 0%, 50%, 1);
+	--clr-neutral-400: hsla(0, 0%, 40%, 1);
+	--clr-neutral-500: hsla(0, 0%, 60%, 1);
+	--clr-neutral-900: hsla(0, 0%, 10%, 1);
 }
 
 @media (min-width: 35em) {
-  :root {
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.5rem;
-    --fs-600: 2.25rem;
-    --fs-700: 3rem;
-  }
+	:root {
+		--fs-300: 1rem;
+		--fs-400: 1.125rem;
+		--fs-500: 1.5rem;
+		--fs-600: 2.25rem;
+		--fs-700: 3rem;
+	}
 }
 
 /* //////////////////////
@@ -42,7 +42,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -56,39 +56,39 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul:where([role="list"]),
 ol:where([role="list"]) {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -96,23 +96,23 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
+	html:focus-within {
+		scroll-behavior: auto;
+	}
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 /* //////////////////////
@@ -120,74 +120,130 @@ select {
   /////////////////////// */
 
 body {
-  font-family: var(--ff-body);
-  font-size: var(--fs-400);
-  color: var(--clr-neutral-900);
+	font-family: var(--ff-body);
+	font-size: var(--fs-400);
+	color: var(--clr-neutral-900);
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--ff-heading);
-  font-weight: var(--fw-900);
-  line-height: 1.1;
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-900);
+	line-height: 1.1;
 }
 
 strong {
-  font-weight: var(--fw-700);
+	font-weight: var(--fw-700);
 }
 
 section,
 .section {
-  padding: min(10vh, 10em) 0;
+	padding: min(10vh, 10em) 0;
 }
 
 /* body {
-height: 1000px;
-} */
+color: white;
+background-color: rgb(9, 9, 107);
+}  */
 
 .hero {
-  overflow: hidden;
-  /* display: flex; */
-  /* height: 100vh; */
+	overflow: hidden;
+	display: flex;
+	padding-bottom: 10vw;
 }
 
 svg {
-  position: relative;
-  float: right;
-  align-self: flex-end; 
-   justify-self: right;
-	/* width: 100%;
-    height: 100%; */
+	float: right;
+	align-self: flex-end;
+	justify-self: right;
+	width: 100%;
+	height: 100%;
 
-	transform: translateX(11%)translateY(-15%);
-  overflow: hidden;
+	overflow: visible;
 }
 
 .hero-txt {
-  padding: 3rem;
-  margin-bottom: 10rem;
+	/* position: relative; */
+	padding: 7vw;
+	align-self: flex-end;
+
+	/* margin-bottom: 30vw; */
+	/* text-align: center; */
+}
+
+.hero-txt h1 {
+	font-size: 15vw;
+	padding-bottom: 1rem;
+}
+
+.hero-txt div {
+	font-size: 5vw;
+}
+
+.section-title {
+	text-align: center;
 }
 
 .featured-articles {
-  background-color: var(--clr-primary-200);
+	background-color: var(--clr-primary-200);
 }
 
 .articles__list {
-  --flow-spacer: 3rem;
-  margin: 6rem 0;
+	--flow-spacer: 3rem;
+	margin: 6rem 0;
 }
 
+/* MOBILE */
+
 @media (max-width: 450px) {
-    svg {
-      position: relative;
-      float: right;
-      align-self: flex-end; 
-       justify-self: right;
-      width: 150%;
-        height: 100%;
-    
-      transform: translateX(11%)translateY(-15%);
-      overflow: hidden;
+	svg {
+		/* position: relative; */
+		float: right;
+		align-self: flex-end;
+		justify-self: right;
+		width: 150%;
+		height: 100%;
+
+		transform: translateX(11%) translateY(-15%);
+		/* overflow: hidden; */
+	}
+	.hero {
+		flex-direction: column-reverse;
+		padding-bottom: 30vw;
+	}
+}
+
+/* DESKTOP */
+
+@media (min-width: 450px) {
+	svg {
+		/* position: relative; */
+		float: right;
+		align-self: flex-end;
+		justify-self: right;
+
+		/* width: 00%; */
+
+		transform: translateX(11%) translateY(-15%);
+		/* overflow: hidden;  */
+	}
+
+	.hero {
+	}
+
+	.hero-txt {
+		padding: 7vw;
+		position: absolute;
+		width: 60vw;
+	}
+
+	.hero-txt h1 {
+		font-size: 6vw;
+		padding-bottom: 1rem;
+	}
+
+	.hero-txt div {
+		font-size: 2vw;
 	}
 }
