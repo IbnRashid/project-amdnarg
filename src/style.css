@@ -155,7 +155,7 @@ background-color: rgb(9, 9, 107);
 .hero {
 	overflow: hidden;
 	display: flex;
-	padding-bottom: 10vw;
+	/* padding-bottom: 10vw; */
 	background-color: white;
 }
 
@@ -322,11 +322,13 @@ background-color: rgb(9, 9, 107);
 
 .scroller {
 	display: grid;
-	gap: 3rem;
+	gap: 1rem;
 	grid-auto-flow: column;
 	grid-auto-columns: 38%;
 	overflow-x: auto;
 	overscroll-behavior-inline: contain;
+	
+	/* scroll-snap-type: inline mandatory; */
 }
 
 .snaps-inline {
@@ -415,21 +417,25 @@ img {
 	}
 
 	.hero-txt {
+		/* background-color: aqua; */
 		padding: 7vw;
 		position: absolute;
-		width: 60vw;
+		width: 50vw;
+		transform: translateY(-10%);
 	}
 
 	.hero-txt h1 {
-		font-size: 6vw;
+		font-size: 8vw;
 		padding-bottom: 1rem;
 	}
 
 	.hero-txt div {
 		font-size: 2vw;
+		color: #282a67;
 	}
 
 	.snippet {
 		margin: 5rem;
+		
 	}
 }
