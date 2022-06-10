@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700..900&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">  -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo.svg">
-
-  <link rel="stylesheet" href="style.css">
-
-  <title>Laffaa</title>
-</head>
-
-<body>
+---
+title: example
+layout: "base.njk"
+---
   <main>
     <div class="hero">
 
@@ -235,51 +217,17 @@
       <div class="container flow">
         <h2 class="section-title text-center ">My Blog</h2>
         <ul role="list" class="articles__list flow">
+          {%- for post in collections.post -%}
           <li>
             <article class="snippet">
-              <img src="/assets/blog/article-1.jpg" alt="This is a test" class="snippet__image">
-
-              <h3 class="snippet__title"><a href="/blog/my-first-article/">My First Article</a></h3>
-              <p class="snippet__meta">Apr 30, 2021</p>
-              <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium
-                sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat.
-                Reprehenderit, distinctio aliquam?</p>
-              <a href="/blog/my-first-article/" class="btn btn--primary">Continue Reading</a>
+              <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" class="snippet__image">
+              <h3 class="snippet__title">{{ post.data.title }}</h3>
+              <p class="snippet__meta">{{ post.date | postDate }}</p>
+              <p class="snippet__body">{{ post.data.description }}</p>
+              <a href="{{ post.url }}" class="btn btn--primary">Continue Reading</a>
             </article>
           </li>
-          <li>
-            <article class="snippet">
-              <img src="/assets/blog/article-2.jpg" alt="This is a test" class="snippet__image">
-              <h3 class="snippet__title"><a href="/blog/my-second-article/">My Second Article</a></h3>
-              <p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 14, 2021</span></p>
-              <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium
-                sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat.
-                Reprehenderit, distinctio aliquam?</p>
-              <a href="/blog/my-second-article/" class="btn btn--primary">Continue Reading</a>
-            </article>
-          </li>
-          <li>
-            <article class="snippet">
-              <img src="/assets/blog/article-3.jpg" alt="This is a test" class="snippet__image">
-              <h3 class="snippet__title"><a href="/blog/my-third-article/">My Third Article</a></h3>
-              <p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 27, 2021</span></p>
-              <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium
-                sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat.
-                Reprehenderit, distinctio aliquam?</p>
-              <a href="/blog/my-third-article/" class="btn btn--primary">Continue Reading</a>
-            </article>
-          </li>
-          <li>
-            <article class="snippet">
-              <img src="/assets/blog/article-5.jpg" alt="This is a test" class="snippet__image">
-              <h3 class="snippet__title"><a href="/blog/my-fifth-article/">My Fifth Article</a></h3>
-              <p class="snippet__meta">by <span>Kevin Powell</span> on <span>Jun 14, 2021</span></p>
-              <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium
-                sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat.
-                Reprehenderit, distinctio aliquam?</p>
-              <a href="/blog/my-fifth-article/" class="btn btn--primary">Continue Reading</a>
-            </article>
-          </li>
+          {%- endfor -%}
         </ul>
       </div>
     </section>
@@ -378,6 +326,3 @@
 
   </footer>
 
-</body>
-
-</html>
