@@ -477,6 +477,11 @@ img {
 	.dict-word-meaning {
 		font-size: 0.9rem;
 	}
+	.snaps-inline {
+		padding-left: 0.5em;
+		scroll-snap-type: none;
+		scroll-padding-inline: 0.5em;
+	}
 
 
 }
