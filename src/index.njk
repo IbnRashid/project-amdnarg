@@ -270,48 +270,13 @@ layout: "base.njk"
         <h2 class="section-title text-center dict-title">My Dictionary</h2>
 
         <div class="scroller articles__list snaps-inline">
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Ultracrepidarian</h3>
-              <p class="dict-word-meaning">An ultracrepidarian is a person who offers opinions beyond their own knowledge. It can also be used as an adjective describing such a person. This word is used in situations when someone is speaking as an authority on a subject that they have only limited knowledge of.</p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Pseudointellectual</h3>
-              <p class="dict-word-meaning">A person who claims proficiency in scholarly or artistic activities while lacking in-depth knowledge or critical understanding. A person who pretends to be of greater intelligence than he or she in fact is.</p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Anecdote</h3>
-              <p class="dict-word-meaning">An anecdote is a brief, revealing account of an individual person or an incident: "a story with a point," such as to communicate an abstract idea about a person, place, or thing through the concrete details of a short narrative or to characterize by delineating a specific quirk or trait.</p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Arbitrariness</h3>
-              <p class="dict-word-meaning">Arbitrariness is the quality of being "determined by chance, whim, or impulse, and not by necessity, reason, or principle". It is also used to refer to a choice made without any specific criterion or restraint. Arbitrary decisions are not necessarily the same as random decisions.</p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Presentism</h3>
-              <p class="dict-word-meaning">Uncritical adherence to present-day attitudes, especially the tendency to interpret past events in terms of modern values and concepts</p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Cynical</h3>
-              <p class="dict-word-meaning">Believing that people are motivated purely by self-interest; distrustful of human sincerity or integrity.
-              </p>
-            </div>
-          
-        
-            <div class="dict-snippet">
-              <h3 class="dict-word">Obscurantism</h3>
-              <p class="dict-word-meaning">Obscurantism is the practice of deliberately presenting information in an imprecise and abstruse manner, often designed to forestall further inquiry and understanding.</p>
-            </div>
+
+          {%- for word in collections.word | reverse -%}
+          <div class="dict-snippet">
+            <h3 class="dict-word">{{ word.data.word }}</h3>
+            <p class="dict-word-meaning">{{ word.data.meaning }}</p>
+          </div>
+          {%- endfor -%}
 
           </div>
           

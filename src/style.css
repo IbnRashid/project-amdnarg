@@ -220,7 +220,7 @@ section,
 
 .section-title {
 	text-align: center;
-	margin: 6rem;
+	margin: 6rem 0;
 }
 
 .articles__list {
@@ -414,6 +414,7 @@ section,
 
 .dict-title {
 	margin-top: 1rem;
+
 }
 
 .dict-snippet {
@@ -441,7 +442,7 @@ img {
 
 /* MOBILE */
 
-@media (max-width: 450px) {
+@media (max-width: 719px)  {
 	.hero-svg {
 		float: right;
 		align-self: flex-end;
@@ -488,7 +489,7 @@ img {
 
 /* DESKTOP */
 
-@media (min-width: 450px) {
+@media (min-width: 719px) {
 	.hero-svg {
 		float: right;
 		align-self: flex-end;
