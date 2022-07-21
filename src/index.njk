@@ -273,7 +273,7 @@ layout: "base.njk"
 
           {%- for word in collections.word | reverse -%}
           <div class="dict-snippet">
-            <h3 class="dict-word">{{ word.data.word }}</h3>
+            <h3 class="dict-word">{{ word.data.title }}</h3>
             <p class="dict-word-meaning">{{ word.data.meaning }}</p>
           </div>
           {%- endfor -%}
